@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<aspectj>
+    <weaver options="-warn:none -Xlint:ignore">
+        <!--指定weave范围-->
+        <include within="com.ximalaya..*"/>
+    </weaver>
+    <aspects>
+        <aspect name="org.cr.aspect.TimeAspect" />
+    </aspects>
+</aspectj>
+
